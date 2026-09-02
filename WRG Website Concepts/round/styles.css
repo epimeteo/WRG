@@ -28,7 +28,7 @@
 .hero-layout { min-height: 720px; }
 .hero-photo { border-radius: 46px 46px 24px 46px; }
 .hero-photo img { object-position: 62% center; }
-.response-panel { border-top: 5px solid var(--emergency); }
+.response-panel { border-top: 5px solid var(--emergency); z-index: 100; }
 .service-grid { gap: 1.25rem; }
 .service-card { min-height: 290px; padding: 1.8rem; }
 .service-card:nth-child(2) { transform: translateY(14px); }
