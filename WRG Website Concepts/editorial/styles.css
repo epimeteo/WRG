@@ -1,0 +1,55 @@
+/*
+  EDITORIAL AUTHORITY
+  Edit the variables below to adjust the entire theme.
+*/
+:root {
+  --background: #fbfaf7;
+  --surface: #f0f5f6;
+  --surface-strong: #e2ecee;
+  --primary: #205c6e;
+  --primary-dark: #153f4b;
+  --emergency: #b63b42;
+  --text: #272522;
+  --muted: #5c5a56;
+  --border: #abbfc4;
+  --radius: 2px;
+  --small-radius: 0;
+  --button-radius: 0;
+  --card-shadow: none;
+  --image-shadow: none;
+  --body-font: "Segoe UI", Arial, sans-serif;
+  --display-font: Georgia, "Times New Roman", serif;
+  --section-space: clamp(5rem, 10vw, 9rem);
+}
+
+.utility-bar { background: #1d363e; }
+.navigation-row { min-height: 94px; }
+.brand { letter-spacing: 0.14em; }
+.hero-layout { min-height: 780px; padding-block: clamp(6rem, 11vw, 10rem); }
+.hero h1 { max-width: 800px; letter-spacing: -0.045em; line-height: 0.98; }
+.hero-photo { border-left: 9px solid var(--emergency); }
+.hero-photo img { object-position: 62% center; filter: saturate(0.82) contrast(1.04); }
+.response-panel { right: -0.75rem; border-width: 1px 0 0 1px; }
+.trust-item strong { font-weight: 500; }
+.service-grid { gap: 2.4rem; }
+.service-card { min-height: 270px; padding: 1.8rem 0; border-width: 1px 0 0; background: transparent; }
+.service-icon { border: 0; border-radius: 0; background: transparent; font-family: var(--display-font); font-size: 1.15rem; }
+.location-grid { gap: 0; }
+.location-card { border-right: 0; }
+.location-card:last-child { border-right: 1px solid var(--border); }
+.project-photo { border-left: 9px solid var(--emergency); }
+.project-photo img { filter: saturate(0.78) contrast(1.05); }
+.authority { background: #1d363e; }
+.about-layout { padding-block: clamp(6rem, 11vw, 10rem); }
+.closing-layout { padding-block: clamp(6rem, 11vw, 10rem); }
+.site-footer { background: #20292c; }
+
+@media (max-width: 920px) {
+  .location-card { border-right: 1px solid var(--border); border-bottom: 0; }
+  .location-card:last-child { border-bottom: 1px solid var(--border); }
+}
+
+@media (max-width: 620px) {
+  .hero-layout { padding-block: 5rem 6rem; }
+  .hero-photo, .project-photo { border-left-width: 6px; }
+}

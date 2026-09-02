@@ -1,0 +1,51 @@
+/*
+  HUMAN RESPONSE
+  Edit the variables below to adjust the entire theme.
+*/
+:root {
+  --background: #fbfdfe;
+  --surface: #e8f7fb;
+  --surface-strong: #d8f0f6;
+  --primary: #1c6e85;
+  --primary-dark: #124f61;
+  --emergency: #c43c45;
+  --text: #253e46;
+  --muted: #50666d;
+  --border: #bfdce4;
+  --radius: 22px;
+  --small-radius: 13px;
+  --button-radius: 999px;
+  --card-shadow: 0 18px 48px rgba(28, 110, 133, 0.12);
+  --image-shadow: 0 28px 70px rgba(18, 79, 97, 0.18);
+  --body-font: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --display-font: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --section-space: clamp(4.5rem, 9vw, 7.5rem);
+}
+
+.utility-bar { background: var(--primary); }
+.navigation-row { min-height: 88px; }
+.hero { margin: 1rem; border-radius: 34px; }
+.hero-layout { min-height: 720px; }
+.hero-photo { border-radius: 46px 46px 24px 46px; }
+.hero-photo img { object-position: 62% center; }
+.response-panel { border-top: 5px solid var(--emergency); }
+.service-grid { gap: 1.25rem; }
+.service-card { min-height: 290px; padding: 1.8rem; }
+.service-card:nth-child(2) { transform: translateY(14px); }
+.service-icon { border-radius: 50%; background: var(--surface); }
+.location-card { min-height: 185px; padding: 1.65rem 3.6rem 1.65rem 1.65rem; }
+.project-photo { border-radius: 46px 22px 46px 22px; }
+.authority { margin-inline: 1rem; border-radius: 34px; }
+.avatar { background: rgba(255, 255, 255, 0.08); }
+.about-band { margin: 1rem; border-radius: 34px; }
+.closing { margin: 1rem; border-radius: 34px; }
+
+@media (max-width: 920px) {
+  .service-card:nth-child(2) { transform: none; }
+}
+
+@media (max-width: 620px) {
+  .hero, .authority, .about-band, .closing { margin: 0.45rem; border-radius: 24px; }
+  .hero-layout { padding-inline: 0.4rem; }
+  .hero-photo { border-radius: 30px 30px 18px 30px; }
+}

@@ -1,0 +1,34 @@
+/*
+  HERITAGE MODERN
+  Edit the variables below to adjust the entire theme.
+*/
+:root {
+  --background: #ffffff;
+  --surface: #eef8fc;
+  --surface-strong: #dceff6;
+  --primary: #16738f;
+  --primary-dark: #0e5368;
+  --emergency: #c22f39;
+  --text: #243238;
+  --muted: #535353;
+  --border: #bfd8e2;
+  --radius: 10px;
+  --small-radius: 7px;
+  --button-radius: 6px;
+  --card-shadow: 0 12px 34px rgba(22, 115, 143, 0.11);
+  --image-shadow: 0 24px 60px rgba(14, 83, 104, 0.18);
+  --body-font: "Segoe UI", Arial, sans-serif;
+  --display-font: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+}
+
+.site-header { box-shadow: 0 1px 0 rgba(22, 115, 143, 0.03); }
+.hero-photo img { object-position: 64% center; }
+.response-panel { border-top: 4px solid var(--emergency); }
+.service-card:hover { transform: translateY(-3px); box-shadow: 0 18px 46px rgba(22, 115, 143, 0.15); }
+.service-card { transition: transform 180ms ease, box-shadow 180ms ease; }
+.about-layout { position: relative; }
+.about-layout::before { position: absolute; top: var(--section-space); bottom: var(--section-space); left: calc(40% - 2rem); width: 1px; background: var(--border); content: ""; }
+
+@media (max-width: 920px) {
+  .about-layout::before { display: none; }
+}
